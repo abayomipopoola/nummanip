@@ -1,6 +1,12 @@
 package calc
 
-func Add (i, j int) int {
+func Add (vals ...int) int {
 
-	return i + j
+	sum := 0
+
+	for _, val := range vals {
+		sum = sum + val
+	}
+
+	return sum
 }
